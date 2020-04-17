@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const config = {
     mode: 'production',
     entry: {
@@ -14,6 +15,9 @@ const config = {
         rules: [
             {test: /\.css$/, use: 'css-loader'},
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({template: './src/index.html'})
+    ]
 };
 module.exports = config;
