@@ -1,7 +1,11 @@
+const webpack = require('webpack');
 const config = {
     entry: {
         app: './src/index.js',
-        vendors: './src/vendors.js'
+    },
+    output: {
+        filename: 'bundle.js',
+        path: '/home/proj/public/assets'
     }
 };
 module.exports = config;
