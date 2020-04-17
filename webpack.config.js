@@ -9,6 +9,11 @@ const config = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].js'
+    },
+    module: {
+        rules: [
+            {test: /\.css$/, use: 'css-loader'},
+        ]
     }
 };
 module.exports = config;

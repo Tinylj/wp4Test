@@ -18,10 +18,9 @@
     "url": "https://github.com/Tinylj/wp4Test/issues"
   },
   "homepage": "https://github.com/Tinylj/wp4Test#readme",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
+    "css-loader": "^3.5.2",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
