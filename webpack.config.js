@@ -1,11 +1,10 @@
 const webpack = require('webpack');
+const path = require('path');
 const config = {
-    entry: {
-        app: './src/index.js',
-    },
+    entry: "./src/index.js",
     output: {
-        filename: 'bundle.js',
-        path: '/home/proj/public/assets'
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'my-first-webpack.bundle.js'
     }
 };
 module.exports = config;
